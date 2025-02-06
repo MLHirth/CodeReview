@@ -17,6 +17,10 @@ import requests
 
 app = FastAPI()
 
+@app.get("/")
+async def root():
+    return {"message": "Backend is running"}
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
