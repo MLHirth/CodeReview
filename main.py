@@ -32,6 +32,7 @@ load_dotenv("api.env.example")
 OLLAMA_API_URL = os.getenv("OLLAMA_API_URL")
 OLLAMA_API_KEY = os.getenv("OLLAMA_API_KEY")
 OLLAMA_JWT_TOKEN = os.getenv("OLLAMA_JWT_TOKEN")
+PORT = os.getenv("PORT", "8000")
 
 # File for storing the leaderboard
 LEADERBOARD_FILE = "leaderboard.json"
